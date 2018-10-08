@@ -1,0 +1,32 @@
+{
+  "name": "react-on-azure",
+  "version": "1.0.0",
+  "description": "This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).",
+  "main": "index.js",
+  "scripts": {
+    "start-client": "cd client && npm start",
+    "start-server": "nodemon index.js",
+    "start-dev": "concurrently --kill-others \"npm run start-server\" \"npm run start-client\"",
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "cd client && npm install && npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/microsoft/vscode-tas-react.git"
+  },
+  "author": "Brian Terlson",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/microsoft/vscode-tas-react/issues"
+  },
+  "homepage": "https://github.com/microsoft/vscode-tas-react#readme",
+  "devDependencies": {
+    "concurrently": "^3.6.0",
+    "nodemon": "^1.17.5"
+  },
+  "dependencies": {
+    "body-parser": "1.18.3",
+    "express": "^4.16.3"
+  }
+}

@@ -1,0 +1,53 @@
+/* === Global === */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial,
+    sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+  font-size: 14px;
+  line-height: 1.5;
+  color: #333;
+  background-color: #fff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: #0078d4;
+}
+
+@media only screen and (max-width: 768px) {
+  #content,
+  .column {
+    flex-direction: column;
+  }
+  #content .column {
+    width: 100%;
+    margin: 0;
+    padding: 32px 0;
+  }
+  .column img {
+    width: 60px;
+  }
+  #content .column:first-child {
+    padding-top: 0;
+  }
+  .column .title {
+    margin-top: 12px;
+  }
+}
+
+/* === Animation === */
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
