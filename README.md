@@ -1,60 +1,33 @@
-# Getting Started
+# Lab 2
 
-This application is a canonical React application generated with `create-react-app`. The client code is under the `client` folder. The server code is in `index.js`. It is designed to work well with [Visual Studio Code](https://code.visualstudio.com) and to be easily deployed to [Azure App Service](https://azure.microsoft.com/en-us/services/app-service/), Azure's fully-managed Platform as a Service (PaaS) that let's you deploy and scale web, mobile, and API apps. 
+[TODO: GOALS]
 
-## Getting the Code
+## Checkout and build the Express/React App
+1. [Clone and open](vscode://vscode.git/clone?url=https://github.com/bowdenk7/lab1-spa.git) the code in this repository with VS Code.
+2. Run `npm install` to get the dependencies
+3. Run `npm run build` to build locally
+[TODO: This takes 2-3m add a description of what we're doing]
+4. Run locally with `npm run start`
 
-Clone directly from GitHub or from your Try Azure App Service instance.
+## Your First Deployment
+1. Open the Azure tab 
+[TODO: screenshot]
+2. Open the storage section
+[TODO: screenshot]
+3. Open the demo subscription: `CADDAI Backups` 
+4. Right click the storage account that corresponds to your machine number and choose **Deploy to static website**
+[TODO: screenshot]
+5. Choose browse and select the `build` folder. This contains the React SPA you just built locally.
+[TODO: screenshot]
+6. When deployment completes, you'll see a notification in the bottom right. Click **Browse to Website** 
+[TODO: screenshot]
 
-## Running the Application Locally
+## Make a code change
+1. Back in VS Code, open `src/App.js` and make a change. If you're unfamiliar with React, that's ok, find **line 12** and edit the text.
+[TODO: screenshot]
+2. Redeploy following the same steps in the above section
 
-After cloning, install the necessary npm dependencies and then run the local development server to launch the application:
+## Summary
+[TODO] 
 
-``` console
-npm install
-npm run start-dev
-```
-
-The default browser will open and you will automatically browse to `http://localhost:3000`. The Express API is running on port 3001 and Webpack will take care of proxying requests from the front-end server to your API server as needed.
-
-## Deployment
-
-### Production Build
-
-```
-> npm run build
-```
-
-You may want to prune both the root and the client packages:
-
-```
-> npm prune --production && cd client && npm prune --production
-```
-
-### Deploying to Azure
-When you first open this folder in VS Code, you'll be prompted to install the [Azure App Service extension](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azureappservice). 
-
-The App Service extension lets you quickly quickly create sites, deploy them, view logs, and even set environment variables (such as a Connection String), right from within VS Code. For more information, see the [App Service Walkthrough](https://code.visualstudio.com/tutorials/app-service-extension/getting-started).
-
-## Additional Documentation
-
-More information on building and deploying Node applications to Azure can be found on the [Node Developer Center](https://docs.microsoft.com/en-us/javascript/azure/?view=azure-node-latest).
-
-## Contributing
-
-This sample's code is hosted on GitHub: https://github.com/microsoft/vscode-tas-react.
-
-This project welcomes contributions and suggestions. Most contributions require you to agree to a
-Contributor License Agreement (CLA) declaring that you have the right to, and actually do, grant us
-the rights to use your contribution. For details, visit https://cla.microsoft.com.
-
-When you submit a pull request, a CLA-bot will automatically determine whether you need to provide
-a CLA and decorate the PR appropriately (e.g., label, comment). Simply follow the instructions
-provided by the bot. You will only need to do this once across all repos using our CLA.
-
-This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/).
-For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or
-contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.
-
-## License
-[MIT](LICENSE.md)
+## All Done!

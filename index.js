@@ -5,7 +5,6 @@ const fs = require('fs');
 const bodyParser = require('body-parser');
 const util = require('util');
 const metaDataFileName = `${__dirname}/metadata.json`;
-var file = require(metaDataFileName);
 const promisifiedReadFile = util.promisify(fs.readFile);
 
 // Azure App Service will set process.env.port for you, but we use 3000 in development.
@@ -13,14 +12,12 @@ main();
 
 async function main() {
 
-  process.env['APPSETTING_SITE_SITEKEY'] = 'testkey8';
-
   const PORT = process.env.PORT || 3001;
   let expiryTimestamp;
   if (!process.env['SITE_EXPIRY_UTC'] || !process.env['USER_GUID']) {
     let fileData = (await readMetadataFile());
-    process.env['SITE_EXPIRY_UTC'] = fileData.expiryTimestamp;
-    process.env['USER_GUID'] = fileData.userGuid;
+    process.env['SITE_EXPIRY_UTC'] = fileData ? fileData.expiryTimestamp : "";
+    process.env['USER_GUID'] = fileData ? fileData.userGuid : "";
   }
   // Create the express routes
   let app = express();
@@ -67,14 +64,19 @@ async function main() {
 }
 
 function updateMetadataFile (expiryTimestamp, userGuid) {
-  file.expiryTimestamp = expiryTimestamp;
-  file.userGuid = userGuid;
-  fs.writeFileSync(metaDataFileName, JSON.stringify(file));
+  if (fs.existsSync(metaDataFileName)) {
+    var file = require(metaDataFileName);
+    file.expiryTimestamp = expiryTimestamp;
+    file.userGuid = userGuid;
+    fs.writeFileSync(metaDataFileName, JSON.stringify(file));
+  }
 }
 
 async function readMetadataFile () {
-  let content = await promisifiedReadFile(metaDataFileName, 'utf8');
-  return JSON.parse(content);
+  if (fs.existsSync(metaDataFileName)) {
+    let content = await promisifiedReadFile(metaDataFileName, 'utf8');
+    return JSON.parse(content);
+  }
 }
 
 
