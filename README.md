@@ -8,8 +8,9 @@ In this lab you will use Azure App Service to host a simple express app and see 
 ```
 cd ~/Downloads
 git clone https://github.com/bowdenk7/lab2-appservice.git
-cd lab2-appservice
+cd lab2-appservice ; code . -r
 ```
+3. 
 3. Run `npm install` to get the dependencies.
 4. Run locally with `npm run start` and navigate to [localhost:3000](http://localhost:3000). You should see the following:
 <img width="556" alt="image" src="https://user-images.githubusercontent.com/820883/46754668-da461280-cc77-11e8-9e01-0c16da5b0e0f.png">
