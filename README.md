@@ -3,15 +3,16 @@
 In this lab you will use Azure App Service to host a simple express app and see how VS Code and the App Service extension make developing on Azure easy and fast.
 
 ## Checkout and build the Express/React App
-1. Clone and open the code in this repository with VS Code:
+1. Open the VS Code integrated terminal with `ctrl + tilde`
+2. Clone and open the code in this repository with VS Code:
 ```
 cd ~/Downloads
 git clone https://github.com/bowdenk7/lab2-appservice.git
 cd lab2-appservice
 ```
-2. Run `npm install` to get the dependencies
-3. Run `npm run build` to build locally
-4. Run locally with `npm run start`. You should see the following:
+3. Run `npm install` to get the dependencies
+4. Run `npm run build` to build locally
+5. Run locally with `npm run start`. You should see the following:
 
 ## Your First Deployment
 1. Open the Azure tab, the App Service section, and then the `CADDAI Backups` demo subscriptions
