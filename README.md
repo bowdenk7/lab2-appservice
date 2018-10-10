@@ -24,7 +24,8 @@ In this lab you will use Azure App Service to host a simple express app and see 
 
 ## Make a code change
 1. Back in VS Code, open `views/index.pug` and make a change. If you're unfamiliar with pug, that's ok, find **line 5** and edit the text.
-[TODO: screenshot]
+<img width="717" alt="image" src="https://user-images.githubusercontent.com/820883/46756803-247dc280-cc7d-11e8-9abf-29b35ce1a3f8.png">
+
 2. Redeploy following the same steps in the above section
 
 
