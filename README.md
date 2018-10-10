@@ -10,9 +10,9 @@ cd ~/Downloads
 git clone https://github.com/bowdenk7/lab2-appservice.git
 cd lab2-appservice
 ```
-3. Run `npm install` to get the dependencies
-4. Run `npm run build` to build locally
-5. Run locally with `npm run start`. You should see the following:
+3. Run `npm install` to get the dependencies.
+4. Run locally with `npm run start` and navigate to [localhost:3000](https://localhost:3000). You should see the following:
+<img width="556" alt="image" src="https://user-images.githubusercontent.com/820883/46754668-da461280-cc77-11e8-9e01-0c16da5b0e0f.png">
 
 ## Your First Deployment
 1. Open the Azure tab, the App Service section, and then the `CADDAI Backups` demo subscriptions
@@ -27,7 +27,7 @@ cd lab2-appservice
 5. When complete, you will see a notification in the bottom right. Click **Browse Website**
 <img width="465" alt="image" src="https://user-images.githubusercontent.com/820883/46754588-ad91fb00-cc77-11e8-9ec0-6a145b17256a.png">
 
-6. If everything worked you should see a basic express page:
+6. If everything worked you should see the basic express page:
 <img width="556" alt="image" src="https://user-images.githubusercontent.com/820883/46754668-da461280-cc77-11e8-9e01-0c16da5b0e0f.png">
 
 ## Make a code change
