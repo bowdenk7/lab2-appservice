@@ -15,7 +15,7 @@ cd lab2-appservice
 <img width="556" alt="image" src="https://user-images.githubusercontent.com/820883/46754668-da461280-cc77-11e8-9e01-0c16da5b0e0f.png">
 
 ## Your First Deployment
-1. Open the Azure tab, the App Service section, and then the `CADDAI Backups` demo subscriptions
+1. Open the Azure tab, the App Service section, and then the `CADDAI Backups` subscription.
 <img width="393" alt="image" src="https://user-images.githubusercontent.com/820883/46754332-0ca34000-cc77-11e8-9d26-c6a84e17c4cc.png">
 
 2. Right click the app service that corresponds to your machine number (eg. jsinteractive<number>) and choose **Deploy to Web App**
@@ -34,7 +34,12 @@ cd lab2-appservice
 1. Back in VS Code, open `views/index.pug` and make a change. If you're unfamiliar with pug, that's ok, find **line 5** and edit the text.
 <img width="717" alt="image" src="https://user-images.githubusercontent.com/820883/46756803-247dc280-cc7d-11e8-9abf-29b35ce1a3f8.png">
 
-2. Redeploy following the same steps in the above section
+2. Select source control in the left hand menu
+<img width="390" alt="image" src="https://user-images.githubusercontent.com/820883/46758888-d66bbd80-cc82-11e8-88d4-64931452f486.png">
+
+3. Commit your changes by clicking the check mark at the top
+
+4. Redeploy following the same steps in the above section
 
 
 ## All Done!
