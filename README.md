@@ -16,9 +16,12 @@ In this lab you will use Azure App Service to host a simple express app and see 
 2. Right click the app service that corresponds to your machine number (eg. jsinteractive<number>) and choose **Deploy to Web App**
 
 3. Choose browse and select the `lab2-appservice` folder. This contains your entire project folder
+
 4. Deployment will take a minute or two. You can see the status in the `output` window. Feel free to ask us questions while you wait!
+
 5. When complete, you will see a notification in the bottom right. Click **Browse Website**
 <img width="465" alt="image" src="https://user-images.githubusercontent.com/820883/46754588-ad91fb00-cc77-11e8-9ec0-6a145b17256a.png">
+
 6. If everything worked you should see a basic express page:
 <img width="556" alt="image" src="https://user-images.githubusercontent.com/820883/46754668-da461280-cc77-11e8-9e01-0c16da5b0e0f.png">
 
