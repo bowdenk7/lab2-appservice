@@ -4,7 +4,11 @@ In this lab you will use Azure App Service to host a simple express app and see 
 
 ## Checkout and build the Express/React App
 1. Clone and open the code in this repository with VS Code:
-`git clone https://github.com/bowdenk7/lab2-appservice.git`
+```
+cd ~/Downloads
+git clone https://github.com/bowdenk7/lab2-appservice.git
+cd lab2-appservice
+```
 2. Run `npm install` to get the dependencies
 3. Run `npm run build` to build locally
 4. Run locally with `npm run start`. You should see the following:
