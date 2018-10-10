@@ -9,7 +9,7 @@
     "start-dev": "concurrently --kill-others \"npm run start-server\" \"npm run start-client\"",
     "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "postinstall": "cd client && npm install && npm run build"
+    "heroku-postbuild": "cd client && npm install && npm run build"
   },
   "repository": {
     "type": "git",
