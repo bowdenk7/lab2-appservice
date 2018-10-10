@@ -37,9 +37,11 @@ cd lab2-appservice
 2. Select source control in the left hand menu
 <img width="390" alt="image" src="https://user-images.githubusercontent.com/820883/46758888-d66bbd80-cc82-11e8-88d4-64931452f486.png">
 
-3. Commit your changes by clicking the check mark at the top
+3. Add your changes by clicking the **+** at the top
 
-4. Redeploy following the same steps in the above section
+4. Then commit your changes by clicking the **check mark** at the top
+
+5. Redeploy following the same steps in the above section
 
 
 ## All Done!
