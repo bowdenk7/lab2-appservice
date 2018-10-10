@@ -8,7 +8,8 @@
 #hero img {
   width: 60px;
   margin-bottom: 12px;
-  /* animation: logo-spin infinite 10s linear; */
+  margin-top: 12px;
+  animation: logo-spin infinite 10s linear;
 }
 
 #hero h1 {
